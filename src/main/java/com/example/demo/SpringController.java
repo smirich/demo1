@@ -9,7 +9,7 @@ public class SpringController {
     @GetMapping("/joke")
     public String getJoke()
     {
-        return "HelloWorld!!!  Yay!!! Too Cool!!!!  Tada!!!!";
+        return "HelloWorld!!!  Yay!!! Too Cool!!!!  Tada!!!!!!!";
     }
 
     //to pull down image from dockerhub and run

@@ -9,7 +9,7 @@ public class HelloController {
     @GetMapping("/")
     public String hello()
     {
-        return "Running on Docker Play!!!!";
+        return "Running on Docker Play!!!!  Did it pick up the change?";
     }
 
 }

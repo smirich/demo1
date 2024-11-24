@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping("/jokes")
 public class JokeController {
 
-    private JokeManager jokeManager;
+    private JokeManager jokeManager = new JokeManager();
 
-    public JokeController(JokeManager jokeManager) {
-        this.jokeManager = jokeManager;
-    }
+    // public JokeController(JokeManager jokeManager) {
+    //     this.jokeManager = jokeManager;
+    // }
 
     @GetMapping("/randomjokes")
     public List<Joke> getRandomJokes(@RequestParam int howMany)
     {
-        return jokeManager.getRandomJokes(howMany);
+        return jokeManager.getRandomJokes(howMany);//howMany
     }
 
 }

@@ -5,12 +5,12 @@ public class Joke {
     protected String jokeContent;
     protected int numThumbsUp;
     protected int numThumbsDown;
+    private static int jokeCounter;
 
-    public Joke(int jokeID, String jokeContent, int numThumbsUp, int numThumbsDown) {
-        this.jokeID = jokeID;
+    public Joke(String jokeContent) {
+        this.jokeID = jokeCounter++;
         this.jokeContent = jokeContent;
-        this.numThumbsUp = numThumbsUp;
-        this.numThumbsDown = numThumbsDown;
+
     }
 
     public int getJokeID()

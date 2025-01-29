@@ -1,4 +1,4 @@
-package com.example.demo.adapters.springcontrollers;
+package com.example.demo.externaldetails.springcontrollers;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;

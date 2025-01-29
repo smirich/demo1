@@ -1,4 +1,4 @@
-package com.example.demo.adapters.springcontrollers;
+package com.example.demo.externaldetails.springcontrollers;
 
 import java.util.List;
 
@@ -24,6 +24,12 @@ public class JokeController {
     public List<Joke> getRandomJokes(@RequestParam int howMany)
     {
         return jokeManager.getRandomJokes(howMany);//howMany
+    }
+
+    @GetMapping("/add")
+    public void getRandomJokes(@RequestParam String joke)
+    {
+        jokeManager.addJoke(new Joke(joke));//howMany
     }
 
 }

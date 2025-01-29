@@ -4,13 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.demo.domain.Joke;
+import com.example.demo.externaldetails.repositories.MockJokeRepo;
 
 public class JokeManager {
 
+    JokeRepository jokeRepo = new MockJokeRepo();
+
     public List<Joke> getRandomJokes(int howMany)
     {
-        ArrayList<Joke> jokes = new ArrayList<>();
-        jokes.add(new Joke(1, "Funny Joke", 3, 2));
-        return jokes;
+
+        return jokeRepo.retrieveRandomJokes(howMany);
+    }
+
+    public void addJoke(Joke joke)
+    {
+        jokeRepo.addJoke(joke);
     }
 }

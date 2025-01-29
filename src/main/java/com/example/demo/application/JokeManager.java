@@ -12,8 +12,7 @@ public class JokeManager {
 
     public List<Joke> getRandomJokes(int howMany)
     {
-
-        return jokeRepo.retrieveRandomJokes(howMany);
+        return jokeRepo.retrieveRandomJokes(howMany) + "!";
     }
 
     public void addJoke(Joke joke)

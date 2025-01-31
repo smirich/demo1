@@ -13,6 +13,8 @@ public class MockJokeRepo implements JokeRepository {
 
     public MockJokeRepo() {
         jokes.add(new Joke("I'm reading a book about anti-gravity.  I just can't put it down"));
+        jokes.add(new Joke("Last night, I dreamt that I was a car muffler.  I woke up exhausted"));
+        jokes.add(new Joke("Where did Napolean keep his armies?  In his sleevies!!!"));
     }
 
     @Override

@@ -20,16 +20,22 @@ public class JokeController {
     //     this.jokeManager = jokeManager;
     // }
 
+    @GetMapping("/randomjoke")
+    public String getMethodName()
+    {
+        return jokeManager.getRandomJokes(1).get(0).getJokeContent();
+    }
+
     @GetMapping("/randomjokes")
     public List<Joke> getRandomJokes(@RequestParam int howMany)
     {
         return jokeManager.getRandomJokes(howMany);//howMany
     }
 
-    @GetMapping("/add")
-    public void getRandomJokes(@RequestParam String joke)
-    {
-        jokeManager.addJoke(new Joke(joke));//howMany
-    }
+    // @GetMapping("/add")
+    // public void getRandomJokes(@RequestParam String joke)
+    // {
+    //     jokeManager.addJoke(new Joke(joke));//howMany
+    // }
 
 }

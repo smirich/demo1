@@ -4,4 +4,4 @@ ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 #COPY target/demo1.jar demo1.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "demo1.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

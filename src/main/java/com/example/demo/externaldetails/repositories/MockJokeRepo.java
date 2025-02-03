@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.example.demo.application.JokeRepository;
 import com.example.demo.domain.Joke;
 
 public class MockJokeRepo implements JokeRepository {

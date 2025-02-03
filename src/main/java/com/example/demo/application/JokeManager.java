@@ -1,9 +1,9 @@
 package com.example.demo.application;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.example.demo.domain.Joke;
+import com.example.demo.externaldetails.repositories.JokeRepository;
 import com.example.demo.externaldetails.repositories.MockJokeRepo;
 
 public class JokeManager {

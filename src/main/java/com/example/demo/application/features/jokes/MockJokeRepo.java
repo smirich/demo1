@@ -1,4 +1,4 @@
-package com.example.demo.application.jokeusecases;
+package com.example.demo.application.features.jokes;
 
 import java.util.ArrayList;
 import java.util.List;

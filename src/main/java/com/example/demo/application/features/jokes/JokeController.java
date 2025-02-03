@@ -1,4 +1,4 @@
-package com.example.demo.application.jokeusecases;
+package com.example.demo.application.features.jokes;
 
 import java.util.List;
 
@@ -20,7 +20,7 @@ class JokeController {
     @GetMapping("/randomjoke")
     public String getMethodName()
     {
-        return jokeManager.getRandomJokes(1).get(0).getJokeContent() + "!!!***";
+        return jokeManager.getRandomJokes(1).get(0).getJokeContent();
     }
 
     @GetMapping("/randomjokes")

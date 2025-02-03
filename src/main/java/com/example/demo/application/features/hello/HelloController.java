@@ -1,4 +1,4 @@
-package com.example.demo.application.hellousecases;
+package com.example.demo.application.features.hello;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;

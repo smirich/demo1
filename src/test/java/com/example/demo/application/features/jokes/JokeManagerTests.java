@@ -1,4 +1,4 @@
-package com.example.demo.application.jokeusecases;
+package com.example.demo.application.features.jokes;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;

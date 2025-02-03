@@ -1,12 +1,8 @@
-package com.example.demo.application;
+package com.example.demo.application.jokeusecases;
 
 import java.util.List;
 
-import com.example.demo.domain.Joke;
-import com.example.demo.externaldetails.repositories.JokeRepository;
-import com.example.demo.externaldetails.repositories.MockJokeRepo;
-
-public class JokeManager {
+class JokeManager {
 
     JokeRepository jokeRepo = new MockJokeRepo();
 

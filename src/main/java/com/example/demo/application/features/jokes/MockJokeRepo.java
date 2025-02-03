@@ -1,12 +1,10 @@
-package com.example.demo.externaldetails.repositories;
+package com.example.demo.application.jokeusecases;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.example.demo.domain.Joke;
-
-public class MockJokeRepo implements JokeRepository {
+class MockJokeRepo implements JokeRepository {
 
     ArrayList<Joke> jokes = new ArrayList<>();
 

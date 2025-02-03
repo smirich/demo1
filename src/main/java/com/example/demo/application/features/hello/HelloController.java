@@ -1,4 +1,4 @@
-package com.example.demo.externaldetails.springcontrollers;
+package com.example.demo.application.hellousecases;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,6 @@
-package com.example.demo.domain;
+package com.example.demo.application.features.jokes;
 
-public class Joke {
+class Joke {
     protected int jokeID;
     protected String jokeContent;
     protected int numThumbsUp;

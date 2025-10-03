@@ -1,9 +1,6 @@
-package com.example.demo.externaldetails.springcontrollers;
+package com.example.demo.application.features.jokes;
 
 import java.util.List;
-
-import com.example.demo.application.JokeManager;
-import com.example.demo.domain.Joke;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @RequestMapping("/jokes")
-public class JokeController {
+class JokeController {
 
     private JokeManager jokeManager = new JokeManager();
 

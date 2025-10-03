@@ -1,6 +1,5 @@
 package com.example.demo.application.features.jokes;
 
-
 import java.util.List;
 
 interface JokeRepository {
